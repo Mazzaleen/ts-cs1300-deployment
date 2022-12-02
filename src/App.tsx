@@ -240,6 +240,9 @@ export const App = () => {
 				<Heading as='h3' size='l' className="heading">
 					A collection of the most popular Pokemon in the world that happen to be avaliable on BrownU's markeplace.
 				</Heading>
+				<Heading as='h3' size='s' className="heading">
+					<i> Limit one of each Pokemon per Brown Student </i>
+				</Heading>
 				<div className="filter-wrapper">
 					<FormControl className="filter" onChange={(e) => changeType(e)}>
 						<FormLabel>Types</FormLabel>
