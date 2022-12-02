@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/github.io/ts-cs1300-deployment/static/css/main.52ceab3c.css",
-    "main.js": "/github.io/ts-cs1300-deployment/static/js/main.8c05c905.js",
+    "main.js": "/github.io/ts-cs1300-deployment/static/js/main.e1a8bd6d.js",
     "static/js/787.77edf858.chunk.js": "/github.io/ts-cs1300-deployment/static/js/787.77edf858.chunk.js",
     "index.html": "/github.io/ts-cs1300-deployment/index.html",
     "main.52ceab3c.css.map": "/github.io/ts-cs1300-deployment/static/css/main.52ceab3c.css.map",
-    "main.8c05c905.js.map": "/github.io/ts-cs1300-deployment/static/js/main.8c05c905.js.map",
+    "main.e1a8bd6d.js.map": "/github.io/ts-cs1300-deployment/static/js/main.e1a8bd6d.js.map",
     "787.77edf858.chunk.js.map": "/github.io/ts-cs1300-deployment/static/js/787.77edf858.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.52ceab3c.css",
-    "static/js/main.8c05c905.js"
+    "static/js/main.e1a8bd6d.js"
   ]
 }
