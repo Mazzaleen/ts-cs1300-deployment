@@ -2,6 +2,8 @@
 .item-wrapper {
 	background-color:#9a3f1b ;
 	width: 100%;
+	display: grid;
+	grid-template-columns: 50% 50%;
 	height: 100%;
 	padding: 10px 20px;
 	padding-right: 10px;
@@ -49,6 +51,12 @@
 	grid-template-rows: 1fr;
 }
 
+.header{
+	flex-direction: row;
+	align-items:center;
+	display: table-cell;
+    vertical-align: middle;
+}
 
 element.style {
 	display: flex;
@@ -57,10 +65,13 @@ element.style {
 
 .MuiCard-root {
 	overflow: hidden;
+	
 }
 
 .MuiPaper-elevation1 {
 	box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+	border: 1px dashed;
+
 }
 
 .MuiPaper-rounded {
@@ -71,6 +82,7 @@ element.style {
 	color: rgba(0, 0, 0, 0.87);
 	transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 	background-color: #fff;
+	
 }
 
 

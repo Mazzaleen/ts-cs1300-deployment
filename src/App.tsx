@@ -139,6 +139,7 @@ export const App = () => {
     //Filtering & Sorting the array based on the select
 	const [priceFilter, setPriceFilter]: [string | undefined, any] = useState(undefined)
 	const [sortId, setSortId]: [boolean | undefined, any] = useState(false) 
+	const [priceId, SetPriceOrder]: [boolean | undefined, any] = useState(false) 
 
 	React.useEffect(() => {
 		displayCards()
@@ -163,6 +164,12 @@ export const App = () => {
 			setSortId(true)
 		} else {
 			setSortId(false)
+		}
+
+		if (state === "option2") {
+			SetPriceOrder(true)
+		} else {
+			SetPriceOrder(false)
 		}
     console.log(state)
 	}
@@ -268,23 +275,28 @@ export const App = () => {
 					<FormControl onChange={(e) => changeSort(e)}>
 						<FormLabel>Sort by</FormLabel>
 						<Select placeholder='Sort By'>
-							<option value='option1'>ID</option>
+							<option value='option1'>Poke-ID</option>
+							<option value='option2'>Price</option>
 						</Select>
 					</FormControl>
-
-					<Button className="Cart-button" colorScheme='teal' variant='solid' onClick={(e) => setCartOn(!cartOn)}>
+{/* </div> */}
+				
+</div>
+<div className="button-wrapper">
+					<Button className="Cart-button"   width = "200px" colorScheme='orange' variant='solid' onClick={(e) => setCartOn(!cartOn)}>
 						View Cart
 					</Button>
 
-          <Button className="Cart-button" colorScheme='yellow' variant='solid' onClick={(e) => refresh()}>
+          			<Button className="Cart-button"   width = "100px" colorScheme='yellow' variant='solid' onClick={(e) => refresh()}>
 						Empty Cart
 					</Button>
+		</div>
 
           <div className="cart-total">
-						<b>Cart total amount: ${total} </b>
+						<b>Total: ${total} </b>
 					</div>
           
-				</div>
+			
    
 				<div className="MuiPaper-root MuiCard-root MuiPaper-elevation1 MuiPaper-rounded">
 					{displayArray.map((item) => {

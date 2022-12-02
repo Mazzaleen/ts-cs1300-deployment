@@ -54,21 +54,26 @@ export const Item = (props: IItemProps) => {
 		<div className="item-wrapper">
 				<div className="left-flex">
 					<div>
-						<div><b>ID: </b>{itemId}</div>
-						<div className="itemName"><b></b>{itemName}</div>
-						<div><b>Price: </b>${price}</div>
+						<div className="header">
+						<div><b> #{itemId} </b></div>
+						
+						
+						</div>
+						
+						<div className="itemName"><b>{itemName}</b></div>
+						<div><i> {price} ¥</i></div>
 						<div><b>Type: </b>{itemType}</div>
-						<div><b>Description: </b>{itemDescription}</div>
+						<div>{itemDescription}</div>
 					</div>
 					
-				{cartOn && <Button colorScheme='teal' variant={selected ? "outline" : "solid"} size='xss' onClick={handleSelect}>
+				{cartOn && <Button colorScheme='teal' variant={selected ? "outline" : "solid"} size='s'  onClick={handleSelect}>
 					{selected ? "Remove  Item From Cart" : "Add Item to cart"}
 					</Button>}	
 			</div>
 				
 		
 			<div>
-				<img src={imageUrl} alt="item image" width="250" height="350"></img>
+				<img src={imageUrl} alt= {itemName}  width="250" height="350"></img>
 			</div>
 		</div>
 	);
