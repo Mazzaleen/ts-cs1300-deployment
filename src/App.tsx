@@ -52,6 +52,14 @@ export const itemsArray: IItem[] = [
         price: '500000',
 		imageUrl:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/149.png"
     },
+	{
+		itemName: "Rayquaza",
+		itemType: "Dragon",
+		itemId: 384,
+		itemDescription: "It flies through the sky in search of powerful opponents. It breathes powerful energy.",
+		price: '700000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/384.png"
+	},
     {
         itemName: "Charizard",
         itemType: "Fire",
@@ -60,6 +68,33 @@ export const itemsArray: IItem[] = [
         price: '90000',
         imageUrl:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png"
     },
+	{
+		itemName: "Charmander",
+		itemType: "Fire",
+		itemId: 4,
+		itemDescription: "Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
+		price: '10000',
+		imageUrl:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png"
+	},
+	{
+		itemName: "Squirtle",
+		itemType: "Water",
+		itemId: 7,
+		itemDescription: "After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
+		price: '10000',
+		imageUrl:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png"
+	},
+	
+	{
+		itemName: "Bulbasaur",
+		itemType: "Grass",
+		itemId: 1,
+		itemDescription: "A strange seed was planted on its back at birth. The plant sprouts and grows with this Pokémon.",
+		price: '10000',
+		imageUrl:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"
+	},
+	
+	
     {
         itemName: "Blastoise",
         itemType: "Water",
@@ -124,7 +159,103 @@ export const itemsArray: IItem[] = [
         itemDescription: "Lives on land and in water. Mudkip's footprints are always found in muddy areas.",
         price: '100000',
         imageUrl:"https://assets.pokemon.com/assets/cms2/img/pokedex/full/258.png"
-    }
+    },
+
+	{
+		itemName: "Magikarp",
+		itemType: "Water",
+		itemId: 129,
+		itemDescription: "In the distant past, it was somewhat stronger than the horribly weak descendants that exist today.",
+		price: '1000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/129.png"
+	},
+
+	{
+		itemName: "Evee",
+		itemType: "Normal",
+		itemId: 133,
+		itemDescription: "Its genetic code is irregular. It may mutate if it is exposed to radiation from element STONEs.",
+		price: '100000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png"
+	},
+	{
+		itemName: "Pidgey",
+		itemType: "Normal",
+		itemId: 16,
+		itemDescription: "Very docile. If attacked, it will often kick up sand to protect itself rather than fight back.",
+		price: '50000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png"
+	},
+	{
+		itemName: "Zapdos",
+		itemType: "Electric",
+		itemId: 145,
+		itemDescription: "A legendary bird POKéMON that is said to appear from clouds while dropping enormous lightning bolts.",
+		price: '1000000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/145.png"
+	},
+	{
+		itemName: "Moltres",
+		itemType: "Fire",
+		itemId: 146,
+		itemDescription: "Known as the legendary bird of fire. Every flap of its wings creates a dazzling flash of flames.",
+		price: '9500000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/146.png"
+	},
+	{
+		itemName: "Victreebel",
+		itemType: "Grass",
+		itemId: 71,
+		itemDescription: "Said to live in huge colonies deep in jungles, although no one has ever returned from there.",
+		price: '120000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/071.png"
+	},
+	{
+		itemName: "Magmar",
+		itemType: "Fire",
+		itemId: 126,
+		itemDescription: "Its body always burns with an orange glow that enables it to hide perfectly among flames.",
+		price: '150000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/126.png"
+	},
+	{
+		itemName: "Parasect",
+		itemType: "Grass",
+		itemId: 47,
+		itemDescription: "A host-parasite pair in which the parasite mushroom has taken over the host bug. Prefers damp places.",
+		price: '100000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/047.png"
+	},
+	{
+		itemName: "Hitmonchan",
+		itemType: "Fighting",
+		itemId: 107,
+		itemDescription: "While apparently doing nothing, it fires punches in lightning fast volleys that are impossible to see.",
+		price: '200000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/107.png"
+	},
+
+	
+	{
+		itemName: "Voltrob",
+		itemType: "Electric",
+		itemId: 100,
+		itemDescription: "Usually found in power plants. Easily mistaken for a POKé BALL, they have zapped many people.",
+		price: '100000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/100.png"
+	},
+	
+
+	{
+		itemName: "Machomp",
+		itemType: "Fighting",
+		itemId: 68,
+		itemDescription: "Loves to build its muscles. It trains in all styles of martial arts to become even stronger.",
+		price: '110000',
+		imageUrl: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/068.png"
+	},
+	
+	
 
 
 ]
@@ -261,6 +392,7 @@ export const App = () => {
 							<option value='Psychic'>Psychic</option>
               <option value='Fighting'>Fighting</option>
               <option value='Electric'>Electric</option>
+			  <option value='Flying'>Dragon</option>
 						</Select>
 					</FormControl>
 					<FormControl onChange={(e) => changePrice(e)}>
