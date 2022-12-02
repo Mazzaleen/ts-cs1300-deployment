@@ -11,6 +11,7 @@ import {
 import "./App.css"
 import { useState } from "react"
 import { Item, IItem } from "./components/item"
+import { createTypeReferenceDirectiveResolutionCache } from "typescript"
 
 
 export const itemsArray: IItem[] = [
@@ -166,6 +167,10 @@ export const App = () => {
     console.log(state)
 	}
 
+	const refresh = () => {
+		window.location.reload();
+	}
+	
 	const changePrice = (e: any) => {
 		
 		const state = e.target.value
@@ -224,7 +229,7 @@ export const App = () => {
 	const [cartOn, setCartOn] = useState(false)
 	
 
-	const displayArray = cartOn ? cart : itemsArray
+	const displayArray = cartOn ? cart : currentArray
 
 	return (
 		<ChakraProvider theme={theme} >
@@ -268,7 +273,7 @@ export const App = () => {
 						View Cart
 					</Button>
 
-          <Button className="Cart-button" colorScheme='yellow' variant='solid' onClick={(e) => setCart(cartOn)}>
+          <Button className="Cart-button" colorScheme='yellow' variant='solid' onClick={(e) => refresh()}>
 						Empty Cart
 					</Button>
 
