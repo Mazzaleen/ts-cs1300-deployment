@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/github.io/ts-cs1300-deployment/static/css/main.52ceab3c.css",
-    "main.js": "/github.io/ts-cs1300-deployment/static/js/main.7f3c4e97.js",
+    "main.css": "/github.io/ts-cs1300-deployment/static/css/main.36caddde.css",
+    "main.js": "/github.io/ts-cs1300-deployment/static/js/main.0dcb123b.js",
     "static/js/787.77edf858.chunk.js": "/github.io/ts-cs1300-deployment/static/js/787.77edf858.chunk.js",
     "index.html": "/github.io/ts-cs1300-deployment/index.html",
-    "main.52ceab3c.css.map": "/github.io/ts-cs1300-deployment/static/css/main.52ceab3c.css.map",
-    "main.7f3c4e97.js.map": "/github.io/ts-cs1300-deployment/static/js/main.7f3c4e97.js.map",
+    "main.36caddde.css.map": "/github.io/ts-cs1300-deployment/static/css/main.36caddde.css.map",
+    "main.0dcb123b.js.map": "/github.io/ts-cs1300-deployment/static/js/main.0dcb123b.js.map",
     "787.77edf858.chunk.js.map": "/github.io/ts-cs1300-deployment/static/js/787.77edf858.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.52ceab3c.css",
-    "static/js/main.7f3c4e97.js"
+    "static/css/main.36caddde.css",
+    "static/js/main.0dcb123b.js"
   ]
 }
