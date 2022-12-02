@@ -252,8 +252,8 @@ export const App = () => {
 				</Heading>
 				<div className="filter-wrapper">
 					<FormControl className="filter" onChange={(e) => changeType(e)}>
-						<FormLabel>Types</FormLabel>
-						<Select placeholder='Type'>
+						<FormLabel>Type</FormLabel>
+						<Select placeholder='Any'>
 							<option value='Normal'>Normal</option>
 							<option value='Grass'>Grass</option>
               <option value='Water'>Water</option>
@@ -265,7 +265,7 @@ export const App = () => {
 					</FormControl>
 					<FormControl onChange={(e) => changePrice(e)}>
 						<FormLabel>Price Range</FormLabel>
-						<Select placeholder='Price Range'>
+						<Select placeholder='Any'>
 							<option value='option1'>100K or Lower </option>
 							<option value='option2'>100K-250K</option>
 							<option value='option3'>250K-500K</option>
@@ -274,7 +274,7 @@ export const App = () => {
 					</FormControl>
 					<FormControl onChange={(e) => changeSort(e)}>
 						<FormLabel>Sort by</FormLabel>
-						<Select placeholder='Sort By'>
+						<Select placeholder='Any'>
 							<option value='option1'>Poke-ID</option>
 							<option value='option2'>Price</option>
 						</Select>
